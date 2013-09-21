@@ -1,0 +1,107 @@
+html.noscroll,
+html.noscroll body {
+    overflow: hidden;
+    }
+.dd-b-popup {
+    position: fixed;
+    overflow: auto;
+    overflow-y: scroll;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+    }
+    .dd-b-popup-h {
+        display: table;
+        margin: 0 auto;
+        height: 100%;
+        }
+        .dd-b-popup-hh {
+            display: table-cell;
+            padding: 20px;
+            vertical-align: middle;       
+            }
+
+    .dd-b-popup .modal-header {
+        padding: 10px;
+        color: #FFF;
+        }           
+        .dd-b-popup .modal-header h3 {
+            font-size: 16px;
+            margin: 0;
+            padding-right: 25px;
+            line-height: 28px;
+            text-align: center;
+            }    
+        .dd-b-popup .modal-header button {
+            font-size: 28px;
+            opacity: 0.8;
+            color: #FFF;
+            }
+            .dd-b-popup .modal-header button:hover {
+                opacity: 1;
+                }                                 
+    .dd-b-popup .modal {
+        position: static;
+        margin: 0;
+        width: auto;
+        display: block;
+        overflow: visible;
+        overflow-y: visible;
+        -webkit-transition: 0.2s linear all; /* Safari/Chrome */
+        -moz-transition: 0.2s linear all; /* Firefox */
+        -ms-transition: 0.2s linear all; /* IE10 */
+        -o-transition: 0.2s linear all; /* Opera */
+        transition: 0.2s linear all; /* Future Browsers */
+        
+        visibility: hidden;
+        opacity: 0;
+        }    
+    .dd-b-popup .modal-body {
+        position: relative;
+        max-height: none;
+        overflow: visible;
+        }
+    .dd-b-popup .dd-b-popup-content {
+        }
+/* NO TITLE */
+.dd-b-popup.no_title .modal-header {
+    position: relative;
+    border-bottom: none;
+    display: block;
+    height: 0px;
+    min-height: 0;
+    padding: 0;
+    }
+    .dd-b-popup.no_title .modal-header h3 {
+        display: none;
+        }
+    .dd-b-popup.no_title .modal-header button {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 1;            
+        } 
+/*STATE ACTIVE*/
+    .dd-b-popup.state_active .modal {
+        opacity: 1;
+        visibility: visible;
+        }
+/*MOD FIT*/   
+.dd-b-popup.mod_fit .dd-b-popup-h {
+    width: 100%;
+    }
+.dd-b-popup.mod_fit .modal-header {
+    width: 100%;
+    z-index: 99;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    }    
+    
+.dd-b-popup.mod_fit .modal-body,
+.dd-b-popup.mod_fit .dd-b-popup-hh {
+    padding: 0;
+    }
